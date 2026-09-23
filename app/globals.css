@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --background-subtle: #f8faf8;
+  --background-muted: #f0f4f1;
+  --foreground: #0d1714;
+  --foreground-muted: #4e5e57;
+  --foreground-subtle: #798b83;
+  --border-subtle: #e2e8e4;
+  --brand-dark: #041f18;
+  --brand-forest: #0f3e33;
+  --brand-pine: #185244;
+  --brand-mint: #d4e9e2;
+  --brand-accent: #059669;
+  --brand-accent-glow: #10b981;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-subtle: var(--background-subtle);
+  --color-background-muted: var(--background-muted);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-border-subtle: var(--border-subtle);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-forest: var(--brand-forest);
+  --color-brand-pine: var(--brand-pine);
+  --color-brand-mint: var(--brand-mint);
+  --color-brand-accent: var(--brand-accent);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f4f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #c2d1cb;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0f3e33;
+}
